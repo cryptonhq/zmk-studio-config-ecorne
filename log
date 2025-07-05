@@ -1,102 +1,408 @@
-Run west build -s zmk/app -d "/tmp/tmp.cfJIS7YTLo" -b "corneish_zen_v2_left" -S "studio-rpc-usb-uart" -- -DZMK_CONFIG=/tmp/zmk-config/config  -DZMK_EXTRA_MODULES='/__w/zmk-studio-config-ecorne/zmk-studio-config-ecorne' -DCONFIG_ZMK_STUDIO=y
-+ west build -s zmk/app -d /tmp/tmp.cfJIS7YTLo -b corneish_zen_v2_left -S studio-rpc-usb-uart -- -DZMK_CONFIG=/tmp/zmk-config/config -DZMK_EXTRA_MODULES=/__w/zmk-studio-config-ecorne/zmk-studio-config-ecorne -DCONFIG_ZMK_STUDIO=y
--- west build: generating a build system
-Loading Zephyr default modules (Zephyr base).
--- Application: /tmp/zmk-config/zmk/app
--- CMake version: 3.30.0
--- Found Python3: /usr/bin/python3 (found suitable version "3.12.3", minimum required is "3.8") found components: Interpreter
--- Cache files will be written to: /tmp/zmk-config/zephyr/.cache
--- Zephyr version: 3.5.0 (/tmp/zmk-config/zephyr)
--- Found west (found suitable version "1.2.0", minimum required is "0.14.0")
--- ZMK Config directory: /tmp/zmk-config/config
--- ZMK Config devicetree overlay: /tmp/zmk-config/config/corneish_zen_v2_left.overlay
--- ZMK Config Kconfig: /tmp/zmk-config/config/corneish_zen.conf
--- Using keymap file: /tmp/zmk-config/zmk/app/boards/arm/corneish_zen/corneish_zen.keymap
--- Board: corneish_zen_v2_left
--- Snippet(s): studio-rpc-usb-uart
--- ZEPHYR_TOOLCHAIN_VARIANT not set, trying to locate Zephyr SDK
--- Found host-tools: zephyr 0.16.3 (/opt/zephyr-sdk-0.16.3)
--- Found toolchain: zephyr 0.16.3 (/opt/zephyr-sdk-0.16.3)
--- Found Dtc: /opt/zephyr-sdk-0.16.3/sysroots/x86_64-pokysdk-linux/usr/bin/dtc (found suitable version "1.6.0", minimum required is "1.4.6")
--- Found BOARD.dts: /tmp/zmk-config/zmk/app/boards/arm/corneish_zen/corneish_zen_v2_left.dts
--- Found devicetree overlay: /tmp/zmk-config/config/corneish_zen_v2_left.overlay
--- Found devicetree overlay: /tmp/zmk-config/zmk/app/boards/arm/corneish_zen/corneish_zen.keymap
--- Found devicetree overlay: /tmp/zmk-config/zmk/app/snippets/studio-rpc-usb-uart/studio-rpc-usb-uart.overlay
--- Generated zephyr.dts: /tmp/tmp.cfJIS7YTLo/zephyr/zephyr.dts
--- Generated devicetree_generated.h: /tmp/tmp.cfJIS7YTLo/zephyr/include/generated/devicetree_generated.h
--- Including generated dts.cmake file: /tmp/tmp.cfJIS7YTLo/zephyr/dts.cmake
+crodox/Kconfig.defconfig:31, /tmp/zmk-
+config/zmk/app/boards/shields/murphpad/Kconfig.defconfig:24, /tmp/zmk-
+config/zmk/app/boards/shields/nibble/Kconfig.defconfig:21, /tmp/zmk-
+config/zmk/app/boards/shields/nice_view/Kconfig.defconfig:6, /tmp/zmk-
+config/zmk/app/boards/shields/snap/Kconfig.defconfig:31, /tmp/zmk-
+config/zmk/app/boards/shields/sofle/Kconfig.defconfig:31, /tmp/zmk-
+config/zmk/app/boards/shields/splitkb_aurora_corne/Kconfig.defconfig:37, /tmp/zmk-
+config/zmk/app/boards/shields/splitkb_aurora_helix/Kconfig.defconfig:35, /tmp/zmk-
+config/zmk/app/boards/shields/splitkb_aurora_lily58/Kconfig.defconfig:37, /tmp/zmk-
+config/zmk/app/boards/shields/splitkb_aurora_sofle/Kconfig.defconfig:35, /tmp/zmk-
+config/zmk/app/boards/shields/splitkb_aurora_sweep/Kconfig.defconfig:37, /tmp/zmk-
+config/zmk/app/boards/shields/tidbit/Kconfig.defconfig:22, /tmp/zmk-
+config/zmk/app/boards/shields/waterfowl/Kconfig.defconfig:29, /tmp/zmk-
+config/zmk/app/boards/shields/zodiark/Kconfig.defconfig:31, /tmp/zmk-
+config/zmk/app/boards/shields/corne/Kconfig.defconfig:28, /tmp/zmk-
+config/zmk/app/boards/shields/elephant42/Kconfig.defconfig:31, /tmp/zmk-
+config/zmk/app/boards/shields/jorne/Kconfig.defconfig:29, /tmp/zmk-
+config/zmk/app/boards/shields/knob_goblin/Kconfig.defconfig:21, /tmp/zmk-
+config/zmk/app/boards/shields/kyria/Kconfig.defconfig:29, /tmp/zmk-
+config/zmk/app/boards/shields/leeloo/Kconfig.defconfig:41, /tmp/zmk-
+config/zmk/app/boards/shields/leeloo_micro/Kconfig.defconfig:31, /tmp/zmk-
+config/zmk/app/boards/shields/lily58/Kconfig.defconfig:29, /tmp/zmk-
+config/zmk/app/boards/shields/lotus58/Kconfig.defconfig:31, /tmp/zmk-
+config/zmk/app/boards/shields/microdox/Kconfig.defconfig:31, /tmp/zmk-
+config/zmk/app/boards/shields/murphpad/Kconfig.defconfig:24, /tmp/zmk-
+config/zmk/app/boards/shields/nibble/Kconfig.defconfig:21, /tmp/zmk-
+config/zmk/app/boards/shields/nice_view/Kconfig.defconfig:6, /tmp/zmk-
+config/zmk/app/boards/shields/snap/Kconfig.defconfig:31, /tmp/zmk-
+config/zmk/app/boards/shields/sofle/Kconfig.defconfig:31, /tmp/zmk-
+config/zmk/app/boards/shields/splitkb_aurora_corne/Kconfig.defconfig:37, /tmp/zmk-
+config/zmk/app/boards/shields/splitkb_aurora_helix/Kconfig.defconfig:35, /tmp/zmk-
+config/zmk/app/boards/shields/splitkb_aurora_lily58/Kconfig.defconfig:37, /tmp/zmk-
+config/zmk/app/boards/shields/splitkb_aurora_sofle/Kconfig.defconfig:35, /tmp/zmk-
+config/zmk/app/boards/shields/splitkb_aurora_sweep/Kconfig.defconfig:37, /tmp/zmk-
+config/zmk/app/boards/shields/tidbit/Kconfig.defconfig:22, /tmp/zmk-
+config/zmk/app/boards/shields/waterfowl/Kconfig.defconfig:29, /tmp/zmk-
+config/zmk/app/boards/shields/zodiark/Kconfig.defconfig:31, /tmp/zmk-
+config/zmk/app/boards/shields/corne/Kconfig.defconfig:28, /tmp/zmk-
+config/zmk/app/boards/shields/elephant42/Kconfig.defconfig:31, /tmp/zmk-
+config/zmk/app/boards/shields/jorne/Kconfig.defconfig:29, /tmp/zmk-
+config/zmk/app/boards/shields/knob_goblin/Kconfig.defconfig:21, /tmp/zmk-
+config/zmk/app/boards/shields/kyria/Kconfig.defconfig:29, /tmp/zmk-
+config/zmk/app/boards/shields/leeloo/Kconfig.defconfig:41, /tmp/zmk-
+config/zmk/app/boards/shields/leeloo_micro/Kconfig.defconfig:31, /tmp/zmk-
+config/zmk/app/boards/shields/lily58/Kconfig.defconfig:29, /tmp/zmk-
+config/zmk/app/boards/shields/lotus58/Kconfig.defconfig:31, /tmp/zmk-
+config/zmk/app/boards/shields/microdox/Kconfig.defconfig:31, /tmp/zmk-
+config/zmk/app/boards/shields/murphpad/Kconfig.defconfig:24, /tmp/zmk-
+config/zmk/app/boards/shields/nibble/Kconfig.defconfig:21, /tmp/zmk-
+config/zmk/app/boards/shields/nice_view/Kconfig.defconfig:6, /tmp/zmk-
+config/zmk/app/boards/shields/snap/Kconfig.defconfig:31, /tmp/zmk-
+config/zmk/app/boards/shields/sofle/Kconfig.defconfig:31, /tmp/zmk-
+config/zmk/app/boards/shields/splitkb_aurora_corne/Kconfig.defconfig:37, /tmp/zmk-
+config/zmk/app/boards/shields/splitkb_aurora_helix/Kconfig.defconfig:35, /tmp/zmk-
+config/zmk/app/boards/shields/splitkb_aurora_lily58/Kconfig.defconfig:37, /tmp/zmk-
+config/zmk/app/boards/shields/splitkb_aurora_sofle/Kconfig.defconfig:35, /tmp/zmk-
+config/zmk/app/boards/shields/splitkb_aurora_sweep/Kconfig.defconfig:37, /tmp/zmk-
+config/zmk/app/boards/shields/tidbit/Kconfig.defconfig:22, /tmp/zmk-
+config/zmk/app/boards/shields/waterfowl/Kconfig.defconfig:29, /tmp/zmk-
+config/zmk/app/boards/shields/zodiark/Kconfig.defconfig:31,
+boards/shields/adafruit_2_8_tft_touch_v2/Kconfig.defconfig:18,
+boards/shields/buydisplay_2_8_tft_touch_arduino/Kconfig.defconfig:18,
+boards/shields/buydisplay_3_5_tft_touch_arduino/Kconfig.defconfig:18,
+boards/shields/g1120b0mipi/Kconfig.defconfig:26, boards/shields/ls0xx_generic/Kconfig.defconfig:10,
+boards/shields/rk055hdmipi4m/Kconfig.defconfig:24,
+boards/shields/rk055hdmipi4ma0/Kconfig.defconfig:26, boards/shields/ssd1306/Kconfig.defconfig:10,
+boards/shields/waveshare_epaper/Kconfig.defconfig:15, modules/lvgl/Kconfig.memory:41,
+modules/lvgl/Kconfig.memory:41) was assigned the value '100' but got the value ''. Check these
+unsatisfied dependencies: ((LVGL && (SHIELD_CORNE_LEFT || SHIELD_CORNE_RIGHT)) || (LVGL &&
+(SHIELD_ELEPHANT42_LEFT || SHIELD_ELEPHANT42_RIGHT)) || (LVGL && (SHIELD_JORNE_LEFT ||
+SHIELD_JORNE_RIGHT)) || (LVGL && SHIELD_KNOB_GOBLIN) || (LVGL && SHIELD_KYRIA) || (LVGL &&
+SHIELD_LEELOO) || (LVGL && SHIELD_LEELOO_MICRO) || (LVGL && (SHIELD_LILY58_LEFT ||
+SHIELD_LILY58_RIGHT)) || (LVGL && (SHIELD_LOTUS58_LEFT || SHIELD_LOTUS58_RIGHT)) || (LVGL &&
+(SHIELD_MICRODOX_LEFT || SHIELD_MICRODOX_RIGHT || SHIELD_MICRODOX_V2_LEFT ||
+SHIELD_MICRODOX_V2_RIGHT)) || (LVGL && SHIELD_MURPHPAD) || (LVGL && SHIELD_NIBBLE) ||
+SHIELD_NICE_VIEW || (LVGL && (SHIELD_SNAP_LEFT || SHIELD_SNAP_RIGHT)) || (LVGL && (SHIELD_SOFLE_LEFT
+|| SHIELD_SOFLE_RIGHT)) || (LVGL && (SHIELD_SPLITKB_AURORA_CORNE_LEFT ||
+SHIELD_SPLITKB_AURORA_CORNE_RIGHT)) || (LVGL && (SHIELD_SPLITKB_AURORA_HELIX_LEFT ||
+SHIELD_SPLITKB_AURORA_HELIX_RIGHT)) || (LVGL && (SHIELD_SPLITKB_AURORA_LILY58_LEFT ||
+SHIELD_SPLITKB_AURORA_LILY58_RIGHT)) || (LVGL && (SHIELD_SPLITKB_AURORA_SOFLE_LEFT ||
+SHIELD_SPLITKB_AURORA_SOFLE_RIGHT)) || (LVGL && (SHIELD_SPLITKB_AURORA_SWEEP_LEFT ||
+SHIELD_SPLITKB_AURORA_SWEEP_RIGHT)) || (LVGL && SHIELD_TIDBIT) || (LVGL && (SHIELD_WATERFOWL_LEFT ||
+SHIELD_WATERFOWL_RIGHT)) || (LVGL && (SHIELD_ZODIARK_LEFT || SHIELD_ZODIARK_RIGHT)) || (LVGL &&
+(SHIELD_CORNE_LEFT || SHIELD_CORNE_RIGHT)) || (LVGL && (SHIELD_ELEPHANT42_LEFT ||
+SHIELD_ELEPHANT42_RIGHT)) || (LVGL && (SHIELD_JORNE_LEFT || SHIELD_JORNE_RIGHT)) || (LVGL &&
+SHIELD_KNOB_GOBLIN) || (LVGL && SHIELD_KYRIA) || (LVGL && SHIELD_LEELOO) || (LVGL &&
+SHIELD_LEELOO_MICRO) || (LVGL && (SHIELD_LILY58_LEFT || SHIELD_LILY58_RIGHT)) || (LVGL &&
+(SHIELD_LOTUS58_LEFT || SHIELD_LOTUS58_RIGHT)) || (LVGL && (SHIELD_MICRODOX_LEFT ||
+SHIELD_MICRODOX_RIGHT || SHIELD_MICRODOX_V2_LEFT || SHIELD_MICRODOX_V2_RIGHT)) || (LVGL &&
+SHIELD_MURPHPAD) || (LVGL && SHIELD_NIBBLE) || SHIELD_NICE_VIEW || (LVGL && (SHIELD_SNAP_LEFT ||
+SHIELD_SNAP_RIGHT)) || (LVGL && (SHIELD_SOFLE_LEFT || SHIELD_SOFLE_RIGHT)) || (LVGL &&
+(SHIELD_SPLITKB_AURORA_CORNE_LEFT || SHIELD_SPLITKB_AURORA_CORNE_RIGHT)) || (LVGL &&
+(SHIELD_SPLITKB_AURORA_HELIX_LEFT || SHIELD_SPLITKB_AURORA_HELIX_RIGHT)) || (LVGL &&
+(SHIELD_SPLITKB_AURORA_LILY58_LEFT || SHIELD_SPLITKB_AURORA_LILY58_RIGHT)) || (LVGL &&
+(SHIELD_SPLITKB_AURORA_SOFLE_LEFT || SHIELD_SPLITKB_AURORA_SOFLE_RIGHT)) || (LVGL &&
+(SHIELD_SPLITKB_AURORA_SWEEP_LEFT || SHIELD_SPLITKB_AURORA_SWEEP_RIGHT)) || (LVGL && SHIELD_TIDBIT)
+|| (LVGL && (SHIELD_WATERFOWL_LEFT || SHIELD_WATERFOWL_RIGHT)) || (LVGL && (SHIELD_ZODIARK_LEFT ||
+SHIELD_ZODIARK_RIGHT)) || (LVGL && (SHIELD_CORNE_LEFT || SHIELD_CORNE_RIGHT)) || (LVGL &&
+(SHIELD_ELEPHANT42_LEFT || SHIELD_ELEPHANT42_RIGHT)) || (LVGL && (SHIELD_JORNE_LEFT ||
+SHIELD_JORNE_RIGHT)) || (LVGL && SHIELD_KNOB_GOBLIN) || (LVGL && SHIELD_KYRIA) || (LVGL &&
+SHIELD_LEELOO) || (LVGL && SHIELD_LEELOO_MICRO) || (LVGL && (SHIELD_LILY58_LEFT ||
+SHIELD_LILY58_RIGHT)) || (LVGL && (SHIELD_LOTUS58_LEFT || SHIELD_LOTUS58_RIGHT)) || (LVGL &&
+(SHIELD_MICRODOX_LEFT || SHIELD_MICRODOX_RIGHT || SHIELD_MICRODOX_V2_LEFT ||
+SHIELD_MICRODOX_V2_RIGHT)) || (LVGL && SHIELD_MURPHPAD) || (LVGL && SHIELD_NIBBLE) ||
+SHIELD_NICE_VIEW || (LVGL && (SHIELD_SNAP_LEFT || SHIELD_SNAP_RIGHT)) || (LVGL && (SHIELD_SOFLE_LEFT
+|| SHIELD_SOFLE_RIGHT)) || (LVGL && (SHIELD_SPLITKB_AURORA_CORNE_LEFT ||
+SHIELD_SPLITKB_AURORA_CORNE_RIGHT)) || (LVGL && (SHIELD_SPLITKB_AURORA_HELIX_LEFT ||
+SHIELD_SPLITKB_AURORA_HELIX_RIGHT)) || (LVGL && (SHIELD_SPLITKB_AURORA_LILY58_LEFT ||
+SHIELD_SPLITKB_AURORA_LILY58_RIGHT)) || (LVGL && (SHIELD_SPLITKB_AURORA_SOFLE_LEFT ||
+SHIELD_SPLITKB_AURORA_SOFLE_RIGHT)) || (LVGL && (SHIELD_SPLITKB_AURORA_SWEEP_LEFT ||
+SHIELD_SPLITKB_AURORA_SWEEP_RIGHT)) || (LVGL && SHIELD_TIDBIT) || (LVGL && (SHIELD_WATERFOWL_LEFT ||
+SHIELD_WATERFOWL_RIGHT)) || (LVGL && (SHIELD_ZODIARK_LEFT || SHIELD_ZODIARK_RIGHT)) || (LVGL &&
+DISPLAY && (SHIELD_ADAFRUIT_2_8_TFT_TOUCH_V2 || SHIELD_ADAFRUIT_2_8_TFT_TOUCH_V2_NANO)) || (LVGL &&
+DISPLAY && SHIELD_BUYDISPLAY_2_8_TFT_TOUCH_ARDUINO) || (LVGL && DISPLAY &&
+SHIELD_BUYDISPLAY_3_5_TFT_TOUCH_ARDUINO) || (LVGL && SHIELD_G1120B0MIPI) || (LVGL && DISPLAY &&
+SHIELD_LS013B7DH03) || (LVGL && SHIELD_RK055HDMIPI4M) || (LVGL && SHIELD_RK055HDMIPI4MA0) || (LVGL
+&& DISPLAY && (SHIELD_SSD1306_128X64 || SHIELD_SSD1306_128X64_SPI || SHIELD_SSD1306_128X32 ||
+SHIELD_SH1106_128X64)) || (LVGL && DISPLAY && (SHIELD_WAVESHARE_EPAPER_GDEH029A1 ||
+SHIELD_WAVESHARE_EPAPER_GDEH0213B1 || SHIELD_WAVESHARE_EPAPER_GDEH0213B72 ||
+SHIELD_WAVESHARE_EPAPER_GDEW075T7 || SHIELD_WAVESHARE_EPAPER_GDEH0154A07 ||
+SHIELD_WAVESHARE_EPAPER_GDEW042T2 || SHIELD_WAVESHARE_EPAPER_GDEW042T2_P)) || LVGL || (LVGL && 0))
+(=n). See http://docs.zephyrproject.org/latest/kconfig.html#CONFIG_LV_Z_VDB_SIZE and/or look up
+LV_Z_VDB_SIZE in the menuconfig/guiconfig interface. The Application Development Primer, Setting
+Configuration Values, and Kconfig - Tips and Best Practices sections of the manual might be helpful
+too.
 
-warning: ZMK_DISPLAY_DEDICATED_THREAD_STACK_SIZE (defined at /tmp/zmk-
-config/zmk/app/src/display/Kconfig:68) was assigned the value '4096' but got the value ''. Check
-these unsatisfied dependencies: ZMK_DISPLAY_WORK_QUEUE_DEDICATED (=n), ZMK_DISPLAY (=n). See
-http://docs.zephyrproject.org/latest/kconfig.html#CONFIG_ZMK_DISPLAY_DEDICATED_THREAD_STACK_SIZE
-and/or look up ZMK_DISPLAY_DEDICATED_THREAD_STACK_SIZE in the menuconfig/guiconfig interface. The
+
+warning: LV_Z_BITS_PER_PIXEL (defined at /tmp/zmk-
+config/zmk/app/boards/shields/corne/Kconfig.defconfig:34, /tmp/zmk-
+config/zmk/app/boards/shields/elephant42/Kconfig.defconfig:37, /tmp/zmk-
+config/zmk/app/boards/shields/jorne/Kconfig.defconfig:35, /tmp/zmk-
+config/zmk/app/boards/shields/knob_goblin/Kconfig.defconfig:27, /tmp/zmk-
+config/zmk/app/boards/shields/kyria/Kconfig.defconfig:35, /tmp/zmk-
+config/zmk/app/boards/shields/leeloo/Kconfig.defconfig:47, /tmp/zmk-
+config/zmk/app/boards/shields/leeloo_micro/Kconfig.defconfig:37, /tmp/zmk-
+config/zmk/app/boards/shields/lily58/Kconfig.defconfig:35, /tmp/zmk-
+config/zmk/app/boards/shields/lotus58/Kconfig.defconfig:37, /tmp/zmk-
+config/zmk/app/boards/shields/microdox/Kconfig.defconfig:37, /tmp/zmk-
+config/zmk/app/boards/shields/murphpad/Kconfig.defconfig:30, /tmp/zmk-
+config/zmk/app/boards/shields/nibble/Kconfig.defconfig:27, /tmp/zmk-
+config/zmk/app/boards/shields/nice_view/Kconfig.defconfig:12, /tmp/zmk-
+config/zmk/app/boards/shields/snap/Kconfig.defconfig:37, /tmp/zmk-
+config/zmk/app/boards/shields/sofle/Kconfig.defconfig:37, /tmp/zmk-
+config/zmk/app/boards/shields/splitkb_aurora_corne/Kconfig.defconfig:43, /tmp/zmk-
+config/zmk/app/boards/shields/splitkb_aurora_helix/Kconfig.defconfig:41, /tmp/zmk-
+config/zmk/app/boards/shields/splitkb_aurora_lily58/Kconfig.defconfig:43, /tmp/zmk-
+config/zmk/app/boards/shields/splitkb_aurora_sofle/Kconfig.defconfig:41, /tmp/zmk-
+config/zmk/app/boards/shields/splitkb_aurora_sweep/Kconfig.defconfig:43, /tmp/zmk-
+config/zmk/app/boards/shields/tidbit/Kconfig.defconfig:28, /tmp/zmk-
+config/zmk/app/boards/shields/waterfowl/Kconfig.defconfig:35, /tmp/zmk-
+config/zmk/app/boards/shields/zodiark/Kconfig.defconfig:37, /tmp/zmk-
+config/zmk/app/boards/shields/corne/Kconfig.defconfig:34, /tmp/zmk-
+config/zmk/app/boards/shields/elephant42/Kconfig.defconfig:37, /tmp/zmk-
+config/zmk/app/boards/shields/jorne/Kconfig.defconfig:35, /tmp/zmk-
+config/zmk/app/boards/shields/knob_goblin/Kconfig.defconfig:27, /tmp/zmk-
+config/zmk/app/boards/shields/kyria/Kconfig.defconfig:35, /tmp/zmk-
+config/zmk/app/boards/shields/leeloo/Kconfig.defconfig:47, /tmp/zmk-
+config/zmk/app/boards/shields/leeloo_micro/Kconfig.defconfig:37, /tmp/zmk-
+config/zmk/app/boards/shields/lily58/Kconfig.defconfig:35, /tmp/zmk-
+config/zmk/app/boards/shields/lotus58/Kconfig.defconfig:37, /tmp/zmk-
+config/zmk/app/boards/shields/microdox/Kconfig.defconfig:37, /tmp/zmk-
+config/zmk/app/boards/shields/murphpad/Kconfig.defconfig:30, /tmp/zmk-
+config/zmk/app/boards/shields/nibble/Kconfig.defconfig:27, /tmp/zmk-
+config/zmk/app/boards/shields/nice_view/Kconfig.defconfig:12, /tmp/zmk-
+config/zmk/app/boards/shields/snap/Kconfig.defconfig:37, /tmp/zmk-
+config/zmk/app/boards/shields/sofle/Kconfig.defconfig:37, /tmp/zmk-
+config/zmk/app/boards/shields/splitkb_aurora_corne/Kconfig.defconfig:43, /tmp/zmk-
+config/zmk/app/boards/shields/splitkb_aurora_helix/Kconfig.defconfig:41, /tmp/zmk-
+config/zmk/app/boards/shields/splitkb_aurora_lily58/Kconfig.defconfig:43, /tmp/zmk-
+config/zmk/app/boards/shields/splitkb_aurora_sofle/Kconfig.defconfig:41, /tmp/zmk-
+config/zmk/app/boards/shields/splitkb_aurora_sweep/Kconfig.defconfig:43, /tmp/zmk-
+config/zmk/app/boards/shields/tidbit/Kconfig.defconfig:28, /tmp/zmk-
+config/zmk/app/boards/shields/waterfowl/Kconfig.defconfig:35, /tmp/zmk-
+config/zmk/app/boards/shields/zodiark/Kconfig.defconfig:37, /tmp/zmk-
+config/zmk/app/boards/shields/corne/Kconfig.defconfig:34, /tmp/zmk-
+config/zmk/app/boards/shields/elephant42/Kconfig.defconfig:37, /tmp/zmk-
+config/zmk/app/boards/shields/jorne/Kconfig.defconfig:35, /tmp/zmk-
+config/zmk/app/boards/shields/knob_goblin/Kconfig.defconfig:27, /tmp/zmk-
+config/zmk/app/boards/shields/kyria/Kconfig.defconfig:35, /tmp/zmk-
+config/zmk/app/boards/shields/leeloo/Kconfig.defconfig:47, /tmp/zmk-
+config/zmk/app/boards/shields/leeloo_micro/Kconfig.defconfig:37, /tmp/zmk-
+config/zmk/app/boards/shields/lily58/Kconfig.defconfig:35, /tmp/zmk-
+config/zmk/app/boards/shields/lotus58/Kconfig.defconfig:37, /tmp/zmk-
+config/zmk/app/boards/shields/microdox/Kconfig.defconfig:37, /tmp/zmk-
+config/zmk/app/boards/shields/murphpad/Kconfig.defconfig:30, /tmp/zmk-
+config/zmk/app/boards/shields/nibble/Kconfig.defconfig:27, /tmp/zmk-
+config/zmk/app/boards/shields/nice_view/Kconfig.defconfig:12, /tmp/zmk-
+config/zmk/app/boards/shields/snap/Kconfig.defconfig:37, /tmp/zmk-
+config/zmk/app/boards/shields/sofle/Kconfig.defconfig:37, /tmp/zmk-
+config/zmk/app/boards/shields/splitkb_aurora_corne/Kconfig.defconfig:43, /tmp/zmk-
+config/zmk/app/boards/shields/splitkb_aurora_helix/Kconfig.defconfig:41, /tmp/zmk-
+config/zmk/app/boards/shields/splitkb_aurora_lily58/Kconfig.defconfig:43, /tmp/zmk-
+config/zmk/app/boards/shields/splitkb_aurora_sofle/Kconfig.defconfig:41, /tmp/zmk-
+config/zmk/app/boards/shields/splitkb_aurora_sweep/Kconfig.defconfig:43, /tmp/zmk-
+config/zmk/app/boards/shields/tidbit/Kconfig.defconfig:28, /tmp/zmk-
+config/zmk/app/boards/shields/waterfowl/Kconfig.defconfig:35, /tmp/zmk-
+config/zmk/app/boards/shields/zodiark/Kconfig.defconfig:37,
+boards/shields/adafruit_2_8_tft_touch_v2/Kconfig.defconfig:21,
+boards/shields/buydisplay_2_8_tft_touch_arduino/Kconfig.defconfig:21,
+boards/shields/buydisplay_3_5_tft_touch_arduino/Kconfig.defconfig:21,
+boards/shields/ls0xx_generic/Kconfig.defconfig:16,
+boards/shields/rk055hdmipi4m/Kconfig.defconfig:36,
+boards/shields/rk055hdmipi4ma0/Kconfig.defconfig:38, boards/shields/ssd1306/Kconfig.defconfig:17,
+boards/shields/st7735r/Kconfig.defconfig:10, boards/shields/st7789v_generic/Kconfig.defconfig:15,
+boards/shields/waveshare_epaper/Kconfig.defconfig:28, modules/lvgl/Kconfig.memory:7,
+modules/lvgl/Kconfig.memory:7) was assigned the value '1' but got the value ''. Check these
+unsatisfied dependencies: ((LVGL && (SHIELD_CORNE_LEFT || SHIELD_CORNE_RIGHT)) || (LVGL &&
+(SHIELD_ELEPHANT42_LEFT || SHIELD_ELEPHANT42_RIGHT)) || (LVGL && (SHIELD_JORNE_LEFT ||
+SHIELD_JORNE_RIGHT)) || (LVGL && SHIELD_KNOB_GOBLIN) || (LVGL && SHIELD_KYRIA) || (LVGL &&
+SHIELD_LEELOO) || (LVGL && SHIELD_LEELOO_MICRO) || (LVGL && (SHIELD_LILY58_LEFT ||
+SHIELD_LILY58_RIGHT)) || (LVGL && (SHIELD_LOTUS58_LEFT || SHIELD_LOTUS58_RIGHT)) || (LVGL &&
+(SHIELD_MICRODOX_LEFT || SHIELD_MICRODOX_RIGHT || SHIELD_MICRODOX_V2_LEFT ||
+SHIELD_MICRODOX_V2_RIGHT)) || (LVGL && SHIELD_MURPHPAD) || (LVGL && SHIELD_NIBBLE) ||
+SHIELD_NICE_VIEW || (LVGL && (SHIELD_SNAP_LEFT || SHIELD_SNAP_RIGHT)) || (LVGL && (SHIELD_SOFLE_LEFT
+|| SHIELD_SOFLE_RIGHT)) || (LVGL && (SHIELD_SPLITKB_AURORA_CORNE_LEFT ||
+SHIELD_SPLITKB_AURORA_CORNE_RIGHT)) || (LVGL && (SHIELD_SPLITKB_AURORA_HELIX_LEFT ||
+SHIELD_SPLITKB_AURORA_HELIX_RIGHT)) || (LVGL && (SHIELD_SPLITKB_AURORA_LILY58_LEFT ||
+SHIELD_SPLITKB_AURORA_LILY58_RIGHT)) || (LVGL && (SHIELD_SPLITKB_AURORA_SOFLE_LEFT ||
+SHIELD_SPLITKB_AURORA_SOFLE_RIGHT)) || (LVGL && (SHIELD_SPLITKB_AURORA_SWEEP_LEFT ||
+SHIELD_SPLITKB_AURORA_SWEEP_RIGHT)) || (LVGL && SHIELD_TIDBIT) || (LVGL && (SHIELD_WATERFOWL_LEFT ||
+SHIELD_WATERFOWL_RIGHT)) || (LVGL && (SHIELD_ZODIARK_LEFT || SHIELD_ZODIARK_RIGHT)) || (LVGL &&
+(SHIELD_CORNE_LEFT || SHIELD_CORNE_RIGHT)) || (LVGL && (SHIELD_ELEPHANT42_LEFT ||
+SHIELD_ELEPHANT42_RIGHT)) || (LVGL && (SHIELD_JORNE_LEFT || SHIELD_JORNE_RIGHT)) || (LVGL &&
+SHIELD_KNOB_GOBLIN) || (LVGL && SHIELD_KYRIA) || (LVGL && SHIELD_LEELOO) || (LVGL &&
+SHIELD_LEELOO_MICRO) || (LVGL && (SHIELD_LILY58_LEFT || SHIELD_LILY58_RIGHT)) || (LVGL &&
+(SHIELD_LOTUS58_LEFT || SHIELD_LOTUS58_RIGHT)) || (LVGL && (SHIELD_MICRODOX_LEFT ||
+SHIELD_MICRODOX_RIGHT || SHIELD_MICRODOX_V2_LEFT || SHIELD_MICRODOX_V2_RIGHT)) || (LVGL &&
+SHIELD_MURPHPAD) || (LVGL && SHIELD_NIBBLE) || SHIELD_NICE_VIEW || (LVGL && (SHIELD_SNAP_LEFT ||
+SHIELD_SNAP_RIGHT)) || (LVGL && (SHIELD_SOFLE_LEFT || SHIELD_SOFLE_RIGHT)) || (LVGL &&
+(SHIELD_SPLITKB_AURORA_CORNE_LEFT || SHIELD_SPLITKB_AURORA_CORNE_RIGHT)) || (LVGL &&
+(SHIELD_SPLITKB_AURORA_HELIX_LEFT || SHIELD_SPLITKB_AURORA_HELIX_RIGHT)) || (LVGL &&
+(SHIELD_SPLITKB_AURORA_LILY58_LEFT || SHIELD_SPLITKB_AURORA_LILY58_RIGHT)) || (LVGL &&
+(SHIELD_SPLITKB_AURORA_SOFLE_LEFT || SHIELD_SPLITKB_AURORA_SOFLE_RIGHT)) || (LVGL &&
+(SHIELD_SPLITKB_AURORA_SWEEP_LEFT || SHIELD_SPLITKB_AURORA_SWEEP_RIGHT)) || (LVGL && SHIELD_TIDBIT)
+|| (LVGL && (SHIELD_WATERFOWL_LEFT || SHIELD_WATERFOWL_RIGHT)) || (LVGL && (SHIELD_ZODIARK_LEFT ||
+SHIELD_ZODIARK_RIGHT)) || (LVGL && (SHIELD_CORNE_LEFT || SHIELD_CORNE_RIGHT)) || (LVGL &&
+(SHIELD_ELEPHANT42_LEFT || SHIELD_ELEPHANT42_RIGHT)) || (LVGL && (SHIELD_JORNE_LEFT ||
+SHIELD_JORNE_RIGHT)) || (LVGL && SHIELD_KNOB_GOBLIN) || (LVGL && SHIELD_KYRIA) || (LVGL &&
+SHIELD_LEELOO) || (LVGL && SHIELD_LEELOO_MICRO) || (LVGL && (SHIELD_LILY58_LEFT ||
+SHIELD_LILY58_RIGHT)) || (LVGL && (SHIELD_LOTUS58_LEFT || SHIELD_LOTUS58_RIGHT)) || (LVGL &&
+(SHIELD_MICRODOX_LEFT || SHIELD_MICRODOX_RIGHT || SHIELD_MICRODOX_V2_LEFT ||
+SHIELD_MICRODOX_V2_RIGHT)) || (LVGL && SHIELD_MURPHPAD) || (LVGL && SHIELD_NIBBLE) ||
+SHIELD_NICE_VIEW || (LVGL && (SHIELD_SNAP_LEFT || SHIELD_SNAP_RIGHT)) || (LVGL && (SHIELD_SOFLE_LEFT
+|| SHIELD_SOFLE_RIGHT)) || (LVGL && (SHIELD_SPLITKB_AURORA_CORNE_LEFT ||
+SHIELD_SPLITKB_AURORA_CORNE_RIGHT)) || (LVGL && (SHIELD_SPLITKB_AURORA_HELIX_LEFT ||
+SHIELD_SPLITKB_AURORA_HELIX_RIGHT)) || (LVGL && (SHIELD_SPLITKB_AURORA_LILY58_LEFT ||
+SHIELD_SPLITKB_AURORA_LILY58_RIGHT)) || (LVGL && (SHIELD_SPLITKB_AURORA_SOFLE_LEFT ||
+SHIELD_SPLITKB_AURORA_SOFLE_RIGHT)) || (LVGL && (SHIELD_SPLITKB_AURORA_SWEEP_LEFT ||
+SHIELD_SPLITKB_AURORA_SWEEP_RIGHT)) || (LVGL && SHIELD_TIDBIT) || (LVGL && (SHIELD_WATERFOWL_LEFT ||
+SHIELD_WATERFOWL_RIGHT)) || (LVGL && (SHIELD_ZODIARK_LEFT || SHIELD_ZODIARK_RIGHT)) || (LVGL &&
+DISPLAY && (SHIELD_ADAFRUIT_2_8_TFT_TOUCH_V2 || SHIELD_ADAFRUIT_2_8_TFT_TOUCH_V2_NANO)) || (LVGL &&
+DISPLAY && SHIELD_BUYDISPLAY_2_8_TFT_TOUCH_ARDUINO) || (LVGL && DISPLAY &&
+SHIELD_BUYDISPLAY_3_5_TFT_TOUCH_ARDUINO) || (LVGL && DISPLAY && SHIELD_LS013B7DH03) || (LVGL &&
+SHIELD_RK055HDMIPI4M) || (LVGL && SHIELD_RK055HDMIPI4MA0) || (LVGL && DISPLAY &&
+(SHIELD_SSD1306_128X64 || SHIELD_SSD1306_128X64_SPI || SHIELD_SSD1306_128X32 ||
+SHIELD_SH1106_128X64)) || (LVGL && DISPLAY && SHIELD_ST7735R_ADA_160x128) || (LVGL && DISPLAY &&
+(SHIELD_ST7789V_TL019FQV01 || SHIELD_ST7789V_WAVESHARE_240X240)) || (LVGL && DISPLAY &&
+(SHIELD_WAVESHARE_EPAPER_GDEH029A1 || SHIELD_WAVESHARE_EPAPER_GDEH0213B1 ||
+SHIELD_WAVESHARE_EPAPER_GDEH0213B72 || SHIELD_WAVESHARE_EPAPER_GDEW075T7 ||
+SHIELD_WAVESHARE_EPAPER_GDEH0154A07 || SHIELD_WAVESHARE_EPAPER_GDEW042T2 ||
+SHIELD_WAVESHARE_EPAPER_GDEW042T2_P)) || (LV_Z_BUFFER_ALLOC_STATIC && LVGL) ||
+(LV_Z_BUFFER_ALLOC_STATIC && LVGL && 0)) (=n). See
+http://docs.zephyrproject.org/latest/kconfig.html#CONFIG_LV_Z_BITS_PER_PIXEL and/or look up
+LV_Z_BITS_PER_PIXEL in the menuconfig/guiconfig interface. The Application Development Primer,
+Setting Configuration Values, and Kconfig - Tips and Best Practices sections of the manual might be
+helpful too.
+
+
+warning: SPI_NRFX (defined at drivers/spi/Kconfig.nrfx:4) was assigned the value 'y' but got the
+value 'n'. Check these unsatisfied dependencies: SPI (=n). See
+http://docs.zephyrproject.org/latest/kconfig.html#CONFIG_SPI_NRFX and/or look up SPI_NRFX in the
+menuconfig/guiconfig interface. The Application Development Primer, Setting Configuration Values,
+and Kconfig - Tips and Best Practices sections of the manual might be helpful too.
+
+
+warning: The choice symbol ZMK_DISPLAY_STATUS_SCREEN_CUSTOM (defined at /tmp/zmk-
+config/zmk/app/src/display/Kconfig:50, /tmp/zmk-
+config/zmk/app/boards/shields/nice_view/Kconfig.defconfig:30, /tmp/zmk-
+config/zmk/app/boards/shields/nice_view/Kconfig.defconfig:30, /tmp/zmk-
+config/zmk/app/boards/shields/nice_view/Kconfig.defconfig:30) was selected (set =y), but no symbol
+ended up as the choice selection. See
+http://docs.zephyrproject.org/latest/kconfig.html#CONFIG_ZMK_DISPLAY_STATUS_SCREEN_CUSTOM and/or
+look up ZMK_DISPLAY_STATUS_SCREEN_CUSTOM in the menuconfig/guiconfig interface. The Application
+Development Primer, Setting Configuration Values, and Kconfig - Tips and Best Practices sections of
+the manual might be helpful too.
+
+
+warning: The choice symbol ZMK_DISPLAY_WORK_QUEUE_DEDICATED (defined at /tmp/zmk-
+config/zmk/app/src/display/Kconfig:61) was selected (set =y), but no symbol ended up as the choice
+selection. See
+http://docs.zephyrproject.org/latest/kconfig.html#CONFIG_ZMK_DISPLAY_WORK_QUEUE_DEDICATED and/or
+look up ZMK_DISPLAY_WORK_QUEUE_DEDICATED in the menuconfig/guiconfig interface. The Application
+Development Primer, Setting Configuration Values, and Kconfig - Tips and Best Practices sections of
+the manual might be helpful too.
+
+
+warning: The choice symbol ZMK_LV_FONT_DEFAULT_SMALL_MONTSERRAT_16 (defined at /tmp/zmk-
+config/zmk/app/src/display/Kconfig:108) was selected (set =y), but no symbol ended up as the choice
+selection. See
+http://docs.zephyrproject.org/latest/kconfig.html#CONFIG_ZMK_LV_FONT_DEFAULT_SMALL_MONTSERRAT_16
+and/or look up ZMK_LV_FONT_DEFAULT_SMALL_MONTSERRAT_16 in the menuconfig/guiconfig interface. The
 Application Development Primer, Setting Configuration Values, and Kconfig - Tips and Best Practices
 sections of the manual might be helpful too.
 
 
-warning: LV_Z_VDB_SIZE (defined at /tmp/zmk-
-config/zmk/app/boards/shields/corne/Kconfig.defconfig:28, /tmp/zmk-
-[14/359] Building C object zephyr/CMakeFiles/zephyr.dir/lib/crc/crc16_sw.c.obj
-[15/359] Building C object zephyr/CMakeFiles/zephyr.dir/lib/crc/crc7_sw.c.obj
-[16/359] Building C object zephyr/CMakeFiles/zephyr.dir/lib/crc/crc8_sw.c.obj
+warning: Deprecated symbol NRF_STORE_REBOOT_TYPE_GPREGRET is enabled.
+
+Parsing /tmp/zmk-config/zmk/app/Kconfig
+Loaded configuration '/tmp/zmk-config/zmk/app/boards/arm/corneish_zen/corneish_zen_v2_left_defconfig'
+Merged configuration '/tmp/zmk-config/zmk/app/prj.conf'
+Merged configuration '/tmp/zmk-config/config/corneish_zen.conf'
+Merged configuration '/tmp/zmk-config/zmk/app/snippets/studio-rpc-usb-uart/studio-rpc-usb-uart.conf'
+Merged configuration '/tmp/tmp.SFfZnkXH1j/zephyr/misc/generated/extra_kconfig_options.conf'
+Configuration saved to '/tmp/tmp.SFfZnkXH1j/zephyr/.config'
+Kconfig header saved to '/tmp/tmp.SFfZnkXH1j/zephyr/include/generated/autoconf.h'
+-- Found GnuLd: /opt/zephyr-sdk-0.16.3/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/bin/ld.bfd (found version "2.38")
+-- The C compiler identification is GNU 12.2.0
+-- The CXX compiler identification is GNU 12.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: /opt/zephyr-sdk-0.16.3/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc
+-- Found Nanopb: /tmp/zmk-config/modules/lib/nanopb
+-- Found protoc: /tmp/zmk-config/modules/lib/nanopb/generator/protoc
+-- Found Nanopb: /tmp/zmk-config/modules/lib/nanopb
+-- Configuring done (3.4s)
+-- Generating done (0.2s)
+-- Build files have been written to: /tmp/tmp.SFfZnkXH1j
+-- west build: building application
+[1/359] Preparing syscall dependency handling
+
+[2/359] Generating include/generated/version.h
+-- Zephyr version: 3.5.0 (/tmp/zmk-config/zephyr), build: 628a0d85e369
+[3/359] Generating include/generated/app_version.h
+[4/359] Generating misc/generated/syscalls_subdirs.trigger
+[5/359] Generating misc/generated/syscalls.json, misc/generated/struct_tags.json
+[6/359] Generating include/generated/syscall_dispatch.c, include/generated/syscall_list.h
+[7/359] Generating include/generated/driver-validation.h
+[8/359] Generating include/generated/kobj-types-enum.h, include/generated/otype-to-str.h, include/generated/otype-to-size.h
+[9/359] Building C object zephyr/CMakeFiles/offsets.dir/arch/arm/core/offsets/offsets.c.obj
+[10/359] Generating include/generated/offsets.h
+[11/359] Generating nanopb/generator/nanopb_generator.py, nanopb/generator/proto/nanopb.proto
+[12/359] Building C object zephyr/CMakeFiles/zephyr.dir/lib/crc/crc8_sw.c.obj
+[13/359] Building C object zephyr/CMakeFiles/zephyr.dir/lib/crc/crc32c_sw.c.obj
+[14/359] Building C object zephyr/CMakeFiles/zephyr.dir/lib/crc/crc7_sw.c.obj
+[15/359] Building C object zephyr/CMakeFiles/zephyr.dir/lib/crc/crc32_sw.c.obj
+[16/359] Building C object zephyr/CMakeFiles/zephyr.dir/lib/crc/crc16_sw.c.obj
 [17/359] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/dec.c.obj
-[18/359] Building C object zephyr/CMakeFiles/zephyr.dir/lib/crc/crc4_sw.c.obj
-[19/359] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/hex.c.obj
+[18/359] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/hex.c.obj
+[19/359] Building C object zephyr/CMakeFiles/zephyr.dir/lib/crc/crc4_sw.c.obj
 [20/359] Generating nanopb/generator/proto/nanopb_pb2.py
 [21/359] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/printk.c.obj
 [22/359] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/sem.c.obj
-[23/359] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf_packaged.c.obj
-[24/359] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/thread_entry.c.obj
+[23/359] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/thread_entry.c.obj
+[24/359] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf_packaged.c.obj
 [25/359] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/rb.c.obj
-[26/359] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/timeutil.c.obj
+[26/359] Running C++ protocol buffer compiler using nanopb plugin on /tmp/zmk-config/modules/msgs/zmk-studio-messages/proto/zmk/behaviors.proto
 [27/359] Running C++ protocol buffer compiler using nanopb plugin on /tmp/zmk-config/modules/msgs/zmk-studio-messages/proto/zmk/meta.proto
-[28/359] Running C++ protocol buffer compiler using nanopb plugin on /tmp/zmk-config/modules/msgs/zmk-studio-messages/proto/zmk/core.proto
-[29/359] Running C++ protocol buffer compiler using nanopb plugin on /tmp/zmk-config/modules/msgs/zmk-studio-messages/proto/zmk/studio.proto
-[30/359] Running C++ protocol buffer compiler using nanopb plugin on /tmp/zmk-config/modules/msgs/zmk-studio-messages/proto/zmk/behaviors.proto
-[31/359] Running C++ protocol buffer compiler using nanopb plugin on /tmp/zmk-config/modules/msgs/zmk-studio-messages/proto/zmk/keymap.proto
-[32/359] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/heap.c.obj
-[33/359] Building C object CMakeFiles/app.dir/src/stdlib.c.obj
-[34/359] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/multi_heap.c.obj
-[35/359] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/heap-validate.c.obj
-[36/359] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/bitarray.c.obj
-[37/359] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/onoff.c.obj
-[38/359] Building C object CMakeFiles/app.dir/src/sensors.c.obj
-[39/359] Building C object CMakeFiles/app.dir/src/matrix_transform.c.obj
-[40/359] Building C object CMakeFiles/app.dir/src/activity.c.obj
-[41/359] Building C object CMakeFiles/app.dir/src/pm.c.obj
-[42/359] Building C object CMakeFiles/app.dir/src/physical_layouts.c.obj
-[43/359] Building C object CMakeFiles/app.dir/src/ext_power_generic.c.obj
-[44/359] Building C object CMakeFiles/app.dir/src/events/activity_state_changed.c.obj
-[45/359] Building C object CMakeFiles/app.dir/src/event_manager.c.obj
-[46/359] Building C object CMakeFiles/app.dir/src/behavior.c.obj
-[47/359] Building C object CMakeFiles/app.dir/src/events/position_state_changed.c.obj
-[48/359] Building C object CMakeFiles/app.dir/src/events/sensor_event.c.obj
-[49/359] Building C object CMakeFiles/app.dir/src/events/usb_conn_state_changed.c.obj
-[50/359] Building C object CMakeFiles/app.dir/src/behaviors/behavior_reset.c.obj
-[51/359] Building C object CMakeFiles/app.dir/src/pointing/input_listener.c.obj
-[52/359] Building C object CMakeFiles/app.dir/src/behaviors/behavior_ext_power.c.obj
-[53/359] Building C object CMakeFiles/app.dir/src/behaviors/behavior_key_press.c.obj
-[54/359] Building C object CMakeFiles/app.dir/src/behaviors/behavior_key_toggle.c.obj
-[55/359] Building C object CMakeFiles/app.dir/src/behaviors/behavior_caps_word.c.obj
-[56/359] Building C object CMakeFiles/app.dir/src/hid.c.obj
-[57/359] Building C object CMakeFiles/app.dir/src/behaviors/behavior_sticky_key.c.obj
-[58/359] Building C object CMakeFiles/app.dir/src/behaviors/behavior_key_repeat.c.obj
-[59/359] Building C object CMakeFiles/app.dir/src/behaviors/behavior_momentary_layer.c.obj
-[60/359] Building C object CMakeFiles/app.dir/src/behaviors/behavior_outputs.c.obj
-[61/359] Building C object CMakeFiles/app.dir/src/behaviors/behavior_toggle_layer.c.obj
+[28/359] Running C++ protocol buffer compiler using nanopb plugin on /tmp/zmk-config/modules/msgs/zmk-studio-messages/proto/zmk/studio.proto
+[29/359] Running C++ protocol buffer compiler using nanopb plugin on /tmp/zmk-config/modules/msgs/zmk-studio-messages/proto/zmk/core.proto
+[30/359] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/timeutil.c.obj
+[31/359] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/multi_heap.c.obj
+[32/359] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/bitarray.c.obj
+[33/359] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/heap.c.obj
+[34/359] Running C++ protocol buffer compiler using nanopb plugin on /tmp/zmk-config/modules/msgs/zmk-studio-messages/proto/zmk/keymap.proto
+[35/359] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/notify.c.obj
+[36/359] Building C object CMakeFiles/app.dir/src/stdlib.c.obj
+[37/359] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/heap-validate.c.obj
+[38/359] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/onoff.c.obj
+[39/359] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/ring_buffer.c.obj
+[40/359] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf_nano.c.obj
+[41/359] Building C object CMakeFiles/app.dir/src/matrix_transform.c.obj
+[42/359] Building C object CMakeFiles/app.dir/src/activity.c.obj
+[43/359] Building C object CMakeFiles/app.dir/src/sensors.c.obj
+[44/359] Building C object CMakeFiles/app.dir/src/event_manager.c.obj
+[45/359] Building C object CMakeFiles/app.dir/src/ext_power_generic.c.obj
+[46/359] Building C object CMakeFiles/app.dir/src/pm.c.obj
+[47/359] Building C object CMakeFiles/app.dir/src/behavior.c.obj
+[48/359] Building C object CMakeFiles/app.dir/src/physical_layouts.c.obj
+[49/359] Building C object CMakeFiles/app.dir/src/events/position_state_changed.c.obj
+[50/359] Building C object CMakeFiles/app.dir/src/events/activity_state_changed.c.obj
+[51/359] Building C object CMakeFiles/app.dir/src/behaviors/behavior_reset.c.obj
+[52/359] Building C object CMakeFiles/app.dir/src/events/usb_conn_state_changed.c.obj
+[53/359] Building C object CMakeFiles/app.dir/src/events/sensor_event.c.obj
+[54/359] Building C object CMakeFiles/app.dir/src/behaviors/behavior_ext_power.c.obj
+[55/359] Building C object CMakeFiles/app.dir/src/pointing/input_listener.c.obj
+[56/359] Building C object CMakeFiles/app.dir/src/behaviors/behavior_key_press.c.obj
+[57/359] Building C object CMakeFiles/app.dir/src/behaviors/behavior_key_toggle.c.obj
+[58/359] Building C object CMakeFiles/app.dir/src/behaviors/behavior_sticky_key.c.obj
+[59/359] Building C object CMakeFiles/app.dir/src/hid.c.obj
+[60/359] Building C object CMakeFiles/app.dir/src/behaviors/behavior_key_repeat.c.obj
+[61/359] Building C object CMakeFiles/app.dir/src/behaviors/behavior_momentary_layer.c.obj
+[62/359] Building C object CMakeFiles/app.dir/src/behaviors/behavior_caps_word.c.obj
+[63/359] Building C object CMakeFiles/app.dir/src/behaviors/behavior_mod_morph.c.obj
+[64/359] Building C object CMakeFiles/app.dir/src/behaviors/behavior_toggle_layer.c.obj
 FAILED: CMakeFiles/app.dir/src/behaviors/behavior_toggle_layer.c.obj 
-ccache /opt/zephyr-sdk-0.16.3/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc -DKERNEL -DNRF52840_XXAA -DPB_MAX_REQUIRED_FIELDS=64 -DPB_NO_ENCODE_SIZE_CHECK -DPB_NO_ERRMSG -DPB_WITHOUT_64BIT -DPICOLIBC_INTEGER_PRINTF_SCANF -D_FORTIFY_SOURCE=1 -D_POSIX_C_SOURCE=200809 -D__LINUX_ERRNO_EXTENSIONS__ -D__PROGRAM_START -D__ZEPHYR__=1 -I/tmp/zmk-config/zmk/app/include -I/tmp/tmp.cfJIS7YTLo -I/tmp/zmk-config/zephyr/include -I/tmp/tmp.cfJIS7YTLo/zephyr/include/generated -I/tmp/zmk-config/zephyr/soc/arm/nordic_nrf/nrf52 -I/tmp/zmk-config/zephyr/soc/arm/nordic_nrf/common/. -I/tmp/zmk-config/zephyr/subsys/usb/device -I/tmp/zmk-config/zephyr/subsys/bluetooth/controller/ll_sw/nordic/hal/nrf5/nrfx_glue -I/tmp/zmk-config/zephyr/subsys/bluetooth -I/tmp/zmk-config/zephyr/subsys/settings/include -I/tmp/zmk-config/modules/lib/nanopb -I/tmp/zmk-config/modules/hal/cmsis/CMSIS/Core/Include -I/tmp/zmk-config/zephyr/modules/cmsis/. -I/tmp/zmk-config/modules/hal/nordic/nrfx -I/tmp/zmk-config/modules/hal/nordic/nrfx/drivers/include -I/tmp/zmk-config/modules/hal/nordic/nrfx/mdk -I/tmp/zmk-config/zephyr/modules/hal_nordic/nrfx/. -I/tmp/zmk-config/modules/crypto/tinycrypt/lib/include -I/tmp/zmk-config/zmk/app/module/include -I/tmp/zmk-config/zmk/app/module/drivers/sensor/battery/. -fno-strict-aliasing -Os -imacros /tmp/tmp.cfJIS7YTLo/zephyr/include/generated/autoconf.h -fno-printf-return-value -fno-common -g -gdwarf-4 -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mabi=aapcs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mfp16-format=ieee --sysroot=/opt/zephyr-sdk-0.16.3/arm-zephyr-eabi/arm-zephyr-eabi -imacros /tmp/zmk-config/zephyr/include/zephyr/toolchain/zephyr_stdint.h -Wall -Wformat -Wformat-security -Wno-format-zero-length -Wno-pointer-sign -Wpointer-arith -Wexpansion-to-defined -Wno-unused-but-set-variable -Werror=implicit-int -fno-pic -fno-pie -fno-asynchronous-unwind-tables -ftls-model=local-exec -fno-reorder-functions --param=min-pagesize=0 -fno-defer-pop -fmacro-prefix-map=/tmp/zmk-config/zmk/app=CMAKE_SOURCE_DIR -fmacro-prefix-map=/tmp/zmk-config/zephyr=ZEPHYR_BASE -fmacro-prefix-map=/tmp/zmk-config=WEST_TOPDIR -ffunction-sections -fdata-sections --specs=picolibc.specs -std=c99 -Wfatal-errors -MD -MT CMakeFiles/app.dir/src/behaviors/behavior_toggle_layer.c.obj -MF CMakeFiles/app.dir/src/behaviors/behavior_toggle_layer.c.obj.d -o CMakeFiles/app.dir/src/behaviors/behavior_toggle_layer.c.obj -c /tmp/zmk-config/zmk/app/src/behaviors/behavior_toggle_layer.c
+ccache /opt/zephyr-sdk-0.16.3/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc -DKERNEL -DNRF52840_XXAA -DPB_MAX_REQUIRED_FIELDS=64 -DPB_NO_ENCODE_SIZE_CHECK -DPB_NO_ERRMSG -DPB_WITHOUT_64BIT -DPICOLIBC_INTEGER_PRINTF_SCANF -D_FORTIFY_SOURCE=1 -D_POSIX_C_SOURCE=200809 -D__LINUX_ERRNO_EXTENSIONS__ -D__PROGRAM_START -D__ZEPHYR__=1 -I/tmp/zmk-config/zmk/app/include -I/tmp/tmp.SFfZnkXH1j -I/tmp/zmk-config/zephyr/include -I/tmp/tmp.SFfZnkXH1j/zephyr/include/generated -I/tmp/zmk-config/zephyr/soc/arm/nordic_nrf/nrf52 -I/tmp/zmk-config/zephyr/soc/arm/nordic_nrf/common/. -I/tmp/zmk-config/zephyr/subsys/usb/device -I/tmp/zmk-config/zephyr/subsys/bluetooth/controller/ll_sw/nordic/hal/nrf5/nrfx_glue -I/tmp/zmk-config/zephyr/subsys/bluetooth -I/tmp/zmk-config/zephyr/subsys/settings/include -I/tmp/zmk-config/modules/lib/nanopb -I/tmp/zmk-config/modules/hal/cmsis/CMSIS/Core/Include -I/tmp/zmk-config/zephyr/modules/cmsis/. -I/tmp/zmk-config/modules/hal/nordic/nrfx -I/tmp/zmk-config/modules/hal/nordic/nrfx/drivers/include -I/tmp/zmk-config/modules/hal/nordic/nrfx/mdk -I/tmp/zmk-config/zephyr/modules/hal_nordic/nrfx/. -I/tmp/zmk-config/modules/crypto/tinycrypt/lib/include -I/tmp/zmk-config/zmk/app/module/include -I/tmp/zmk-config/zmk/app/module/drivers/sensor/battery/. -fno-strict-aliasing -Os -imacros /tmp/tmp.SFfZnkXH1j/zephyr/include/generated/autoconf.h -fno-printf-return-value -fno-common -g -gdwarf-4 -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mabi=aapcs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mfp16-format=ieee --sysroot=/opt/zephyr-sdk-0.16.3/arm-zephyr-eabi/arm-zephyr-eabi -imacros /tmp/zmk-config/zephyr/include/zephyr/toolchain/zephyr_stdint.h -Wall -Wformat -Wformat-security -Wno-format-zero-length -Wno-pointer-sign -Wpointer-arith -Wexpansion-to-defined -Wno-unused-but-set-variable -Werror=implicit-int -fno-pic -fno-pie -fno-asynchronous-unwind-tables -ftls-model=local-exec -fno-reorder-functions --param=min-pagesize=0 -fno-defer-pop -fmacro-prefix-map=/tmp/zmk-config/zmk/app=CMAKE_SOURCE_DIR -fmacro-prefix-map=/tmp/zmk-config/zephyr=ZEPHYR_BASE -fmacro-prefix-map=/tmp/zmk-config=WEST_TOPDIR -ffunction-sections -fdata-sections --specs=picolibc.specs -std=c99 -Wfatal-errors -MD -MT CMakeFiles/app.dir/src/behaviors/behavior_toggle_layer.c.obj -MF CMakeFiles/app.dir/src/behaviors/behavior_toggle_layer.c.obj.d -o CMakeFiles/app.dir/src/behaviors/behavior_toggle_layer.c.obj -c /tmp/zmk-config/zmk/app/src/behaviors/behavior_toggle_layer.c
 /tmp/zmk-config/zmk/app/src/behaviors/behavior_toggle_layer.c: In function 'tog_keymap_binding_pressed':
 /tmp/zmk-config/zmk/app/src/behaviors/behavior_toggle_layer.c:37:16: error: too many arguments to function 'zmk_keymap_layer_activate'
    37 |         return zmk_keymap_layer_activate(binding->param1, false);
       |                ^~~~~~~~~~~~~~~~~~~~~~~~~
 compilation terminated due to -Wfatal-errors.
-[62/359] Building C object CMakeFiles/app.dir/src/behaviors/behavior_mod_morph.c.obj
-[63/359] Building C object CMakeFiles/app.dir/src/behaviors/behavior_hold_tap.c.obj
-[64/359] Building C object CMakeFiles/app.dir/src/behaviors/behavior_to_layer.c.obj
-[65/359] Building C object CMakeFiles/app.dir/src/behaviors/behavior_transparent.c.obj
-[66/359] Building C object CMakeFiles/app.dir/src/behaviors/behavior_none.c.obj
+[65/359] Building C object CMakeFiles/app.dir/src/behaviors/behavior_hold_tap.c.obj
+[66/359] Building C object CMakeFiles/app.dir/src/behaviors/behavior_outputs.c.obj
+[67/359] Building C object CMakeFiles/app.dir/src/behaviors/behavior_to_layer.c.obj
+[68/359] Building C object CMakeFiles/app.dir/src/behaviors/behavior_none.c.obj
+[69/359] Building C object CMakeFiles/app.dir/src/behaviors/behavior_transparent.c.obj
 ninja: build stopped: subcommand failed.
-FATAL ERROR: command exited with status 1: /usr/local/bin/cmake --build /tmp/tmp.cfJIS7YTLo
+FATAL ERROR: command exited with status 1: /usr/local/bin/cmake --build /tmp/tmp.SFfZnkXH1j
 Error: Process completed with exit code 1.
