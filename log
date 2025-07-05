@@ -1,0 +1,102 @@
+Run west build -s zmk/app -d "/tmp/tmp.cfJIS7YTLo" -b "corneish_zen_v2_left" -S "studio-rpc-usb-uart" -- -DZMK_CONFIG=/tmp/zmk-config/config  -DZMK_EXTRA_MODULES='/__w/zmk-studio-config-ecorne/zmk-studio-config-ecorne' -DCONFIG_ZMK_STUDIO=y
++ west build -s zmk/app -d /tmp/tmp.cfJIS7YTLo -b corneish_zen_v2_left -S studio-rpc-usb-uart -- -DZMK_CONFIG=/tmp/zmk-config/config -DZMK_EXTRA_MODULES=/__w/zmk-studio-config-ecorne/zmk-studio-config-ecorne -DCONFIG_ZMK_STUDIO=y
+-- west build: generating a build system
+Loading Zephyr default modules (Zephyr base).
+-- Application: /tmp/zmk-config/zmk/app
+-- CMake version: 3.30.0
+-- Found Python3: /usr/bin/python3 (found suitable version "3.12.3", minimum required is "3.8") found components: Interpreter
+-- Cache files will be written to: /tmp/zmk-config/zephyr/.cache
+-- Zephyr version: 3.5.0 (/tmp/zmk-config/zephyr)
+-- Found west (found suitable version "1.2.0", minimum required is "0.14.0")
+-- ZMK Config directory: /tmp/zmk-config/config
+-- ZMK Config devicetree overlay: /tmp/zmk-config/config/corneish_zen_v2_left.overlay
+-- ZMK Config Kconfig: /tmp/zmk-config/config/corneish_zen.conf
+-- Using keymap file: /tmp/zmk-config/zmk/app/boards/arm/corneish_zen/corneish_zen.keymap
+-- Board: corneish_zen_v2_left
+-- Snippet(s): studio-rpc-usb-uart
+-- ZEPHYR_TOOLCHAIN_VARIANT not set, trying to locate Zephyr SDK
+-- Found host-tools: zephyr 0.16.3 (/opt/zephyr-sdk-0.16.3)
+-- Found toolchain: zephyr 0.16.3 (/opt/zephyr-sdk-0.16.3)
+-- Found Dtc: /opt/zephyr-sdk-0.16.3/sysroots/x86_64-pokysdk-linux/usr/bin/dtc (found suitable version "1.6.0", minimum required is "1.4.6")
+-- Found BOARD.dts: /tmp/zmk-config/zmk/app/boards/arm/corneish_zen/corneish_zen_v2_left.dts
+-- Found devicetree overlay: /tmp/zmk-config/config/corneish_zen_v2_left.overlay
+-- Found devicetree overlay: /tmp/zmk-config/zmk/app/boards/arm/corneish_zen/corneish_zen.keymap
+-- Found devicetree overlay: /tmp/zmk-config/zmk/app/snippets/studio-rpc-usb-uart/studio-rpc-usb-uart.overlay
+-- Generated zephyr.dts: /tmp/tmp.cfJIS7YTLo/zephyr/zephyr.dts
+-- Generated devicetree_generated.h: /tmp/tmp.cfJIS7YTLo/zephyr/include/generated/devicetree_generated.h
+-- Including generated dts.cmake file: /tmp/tmp.cfJIS7YTLo/zephyr/dts.cmake
+
+warning: ZMK_DISPLAY_DEDICATED_THREAD_STACK_SIZE (defined at /tmp/zmk-
+config/zmk/app/src/display/Kconfig:68) was assigned the value '4096' but got the value ''. Check
+these unsatisfied dependencies: ZMK_DISPLAY_WORK_QUEUE_DEDICATED (=n), ZMK_DISPLAY (=n). See
+http://docs.zephyrproject.org/latest/kconfig.html#CONFIG_ZMK_DISPLAY_DEDICATED_THREAD_STACK_SIZE
+and/or look up ZMK_DISPLAY_DEDICATED_THREAD_STACK_SIZE in the menuconfig/guiconfig interface. The
+Application Development Primer, Setting Configuration Values, and Kconfig - Tips and Best Practices
+sections of the manual might be helpful too.
+
+
+warning: LV_Z_VDB_SIZE (defined at /tmp/zmk-
+config/zmk/app/boards/shields/corne/Kconfig.defconfig:28, /tmp/zmk-
+[14/359] Building C object zephyr/CMakeFiles/zephyr.dir/lib/crc/crc16_sw.c.obj
+[15/359] Building C object zephyr/CMakeFiles/zephyr.dir/lib/crc/crc7_sw.c.obj
+[16/359] Building C object zephyr/CMakeFiles/zephyr.dir/lib/crc/crc8_sw.c.obj
+[17/359] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/dec.c.obj
+[18/359] Building C object zephyr/CMakeFiles/zephyr.dir/lib/crc/crc4_sw.c.obj
+[19/359] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/hex.c.obj
+[20/359] Generating nanopb/generator/proto/nanopb_pb2.py
+[21/359] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/printk.c.obj
+[22/359] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/sem.c.obj
+[23/359] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf_packaged.c.obj
+[24/359] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/thread_entry.c.obj
+[25/359] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/rb.c.obj
+[26/359] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/timeutil.c.obj
+[27/359] Running C++ protocol buffer compiler using nanopb plugin on /tmp/zmk-config/modules/msgs/zmk-studio-messages/proto/zmk/meta.proto
+[28/359] Running C++ protocol buffer compiler using nanopb plugin on /tmp/zmk-config/modules/msgs/zmk-studio-messages/proto/zmk/core.proto
+[29/359] Running C++ protocol buffer compiler using nanopb plugin on /tmp/zmk-config/modules/msgs/zmk-studio-messages/proto/zmk/studio.proto
+[30/359] Running C++ protocol buffer compiler using nanopb plugin on /tmp/zmk-config/modules/msgs/zmk-studio-messages/proto/zmk/behaviors.proto
+[31/359] Running C++ protocol buffer compiler using nanopb plugin on /tmp/zmk-config/modules/msgs/zmk-studio-messages/proto/zmk/keymap.proto
+[32/359] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/heap.c.obj
+[33/359] Building C object CMakeFiles/app.dir/src/stdlib.c.obj
+[34/359] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/multi_heap.c.obj
+[35/359] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/heap-validate.c.obj
+[36/359] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/bitarray.c.obj
+[37/359] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/onoff.c.obj
+[38/359] Building C object CMakeFiles/app.dir/src/sensors.c.obj
+[39/359] Building C object CMakeFiles/app.dir/src/matrix_transform.c.obj
+[40/359] Building C object CMakeFiles/app.dir/src/activity.c.obj
+[41/359] Building C object CMakeFiles/app.dir/src/pm.c.obj
+[42/359] Building C object CMakeFiles/app.dir/src/physical_layouts.c.obj
+[43/359] Building C object CMakeFiles/app.dir/src/ext_power_generic.c.obj
+[44/359] Building C object CMakeFiles/app.dir/src/events/activity_state_changed.c.obj
+[45/359] Building C object CMakeFiles/app.dir/src/event_manager.c.obj
+[46/359] Building C object CMakeFiles/app.dir/src/behavior.c.obj
+[47/359] Building C object CMakeFiles/app.dir/src/events/position_state_changed.c.obj
+[48/359] Building C object CMakeFiles/app.dir/src/events/sensor_event.c.obj
+[49/359] Building C object CMakeFiles/app.dir/src/events/usb_conn_state_changed.c.obj
+[50/359] Building C object CMakeFiles/app.dir/src/behaviors/behavior_reset.c.obj
+[51/359] Building C object CMakeFiles/app.dir/src/pointing/input_listener.c.obj
+[52/359] Building C object CMakeFiles/app.dir/src/behaviors/behavior_ext_power.c.obj
+[53/359] Building C object CMakeFiles/app.dir/src/behaviors/behavior_key_press.c.obj
+[54/359] Building C object CMakeFiles/app.dir/src/behaviors/behavior_key_toggle.c.obj
+[55/359] Building C object CMakeFiles/app.dir/src/behaviors/behavior_caps_word.c.obj
+[56/359] Building C object CMakeFiles/app.dir/src/hid.c.obj
+[57/359] Building C object CMakeFiles/app.dir/src/behaviors/behavior_sticky_key.c.obj
+[58/359] Building C object CMakeFiles/app.dir/src/behaviors/behavior_key_repeat.c.obj
+[59/359] Building C object CMakeFiles/app.dir/src/behaviors/behavior_momentary_layer.c.obj
+[60/359] Building C object CMakeFiles/app.dir/src/behaviors/behavior_outputs.c.obj
+[61/359] Building C object CMakeFiles/app.dir/src/behaviors/behavior_toggle_layer.c.obj
+FAILED: CMakeFiles/app.dir/src/behaviors/behavior_toggle_layer.c.obj 
+ccache /opt/zephyr-sdk-0.16.3/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc -DKERNEL -DNRF52840_XXAA -DPB_MAX_REQUIRED_FIELDS=64 -DPB_NO_ENCODE_SIZE_CHECK -DPB_NO_ERRMSG -DPB_WITHOUT_64BIT -DPICOLIBC_INTEGER_PRINTF_SCANF -D_FORTIFY_SOURCE=1 -D_POSIX_C_SOURCE=200809 -D__LINUX_ERRNO_EXTENSIONS__ -D__PROGRAM_START -D__ZEPHYR__=1 -I/tmp/zmk-config/zmk/app/include -I/tmp/tmp.cfJIS7YTLo -I/tmp/zmk-config/zephyr/include -I/tmp/tmp.cfJIS7YTLo/zephyr/include/generated -I/tmp/zmk-config/zephyr/soc/arm/nordic_nrf/nrf52 -I/tmp/zmk-config/zephyr/soc/arm/nordic_nrf/common/. -I/tmp/zmk-config/zephyr/subsys/usb/device -I/tmp/zmk-config/zephyr/subsys/bluetooth/controller/ll_sw/nordic/hal/nrf5/nrfx_glue -I/tmp/zmk-config/zephyr/subsys/bluetooth -I/tmp/zmk-config/zephyr/subsys/settings/include -I/tmp/zmk-config/modules/lib/nanopb -I/tmp/zmk-config/modules/hal/cmsis/CMSIS/Core/Include -I/tmp/zmk-config/zephyr/modules/cmsis/. -I/tmp/zmk-config/modules/hal/nordic/nrfx -I/tmp/zmk-config/modules/hal/nordic/nrfx/drivers/include -I/tmp/zmk-config/modules/hal/nordic/nrfx/mdk -I/tmp/zmk-config/zephyr/modules/hal_nordic/nrfx/. -I/tmp/zmk-config/modules/crypto/tinycrypt/lib/include -I/tmp/zmk-config/zmk/app/module/include -I/tmp/zmk-config/zmk/app/module/drivers/sensor/battery/. -fno-strict-aliasing -Os -imacros /tmp/tmp.cfJIS7YTLo/zephyr/include/generated/autoconf.h -fno-printf-return-value -fno-common -g -gdwarf-4 -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mabi=aapcs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mfp16-format=ieee --sysroot=/opt/zephyr-sdk-0.16.3/arm-zephyr-eabi/arm-zephyr-eabi -imacros /tmp/zmk-config/zephyr/include/zephyr/toolchain/zephyr_stdint.h -Wall -Wformat -Wformat-security -Wno-format-zero-length -Wno-pointer-sign -Wpointer-arith -Wexpansion-to-defined -Wno-unused-but-set-variable -Werror=implicit-int -fno-pic -fno-pie -fno-asynchronous-unwind-tables -ftls-model=local-exec -fno-reorder-functions --param=min-pagesize=0 -fno-defer-pop -fmacro-prefix-map=/tmp/zmk-config/zmk/app=CMAKE_SOURCE_DIR -fmacro-prefix-map=/tmp/zmk-config/zephyr=ZEPHYR_BASE -fmacro-prefix-map=/tmp/zmk-config=WEST_TOPDIR -ffunction-sections -fdata-sections --specs=picolibc.specs -std=c99 -Wfatal-errors -MD -MT CMakeFiles/app.dir/src/behaviors/behavior_toggle_layer.c.obj -MF CMakeFiles/app.dir/src/behaviors/behavior_toggle_layer.c.obj.d -o CMakeFiles/app.dir/src/behaviors/behavior_toggle_layer.c.obj -c /tmp/zmk-config/zmk/app/src/behaviors/behavior_toggle_layer.c
+/tmp/zmk-config/zmk/app/src/behaviors/behavior_toggle_layer.c: In function 'tog_keymap_binding_pressed':
+/tmp/zmk-config/zmk/app/src/behaviors/behavior_toggle_layer.c:37:16: error: too many arguments to function 'zmk_keymap_layer_activate'
+   37 |         return zmk_keymap_layer_activate(binding->param1, false);
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated due to -Wfatal-errors.
+[62/359] Building C object CMakeFiles/app.dir/src/behaviors/behavior_mod_morph.c.obj
+[63/359] Building C object CMakeFiles/app.dir/src/behaviors/behavior_hold_tap.c.obj
+[64/359] Building C object CMakeFiles/app.dir/src/behaviors/behavior_to_layer.c.obj
+[65/359] Building C object CMakeFiles/app.dir/src/behaviors/behavior_transparent.c.obj
+[66/359] Building C object CMakeFiles/app.dir/src/behaviors/behavior_none.c.obj
+ninja: build stopped: subcommand failed.
+FATAL ERROR: command exited with status 1: /usr/local/bin/cmake --build /tmp/tmp.cfJIS7YTLo
+Error: Process completed with exit code 1.

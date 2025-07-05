@@ -13,6 +13,14 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
+    behaviors {
+        tog: toggle_layer {
+            compatible = "zmk,behavior-layer-toggle";
+            #binding-cells = <1>;
+            display-name = "Toggle Layer";
+        };
+    };
+
     combos {
         compatible = "zmk,combos";
 
